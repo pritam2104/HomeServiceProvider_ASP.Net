@@ -1,0 +1,179 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="User.master.cs" Inherits="User_User" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    	<link rel="stylesheet" type="text/css" href="../engine1/style.css" />
+	<script type="text/javascript" src="../engine1/jquery.js"></script>
+   <link href="<%=ResolveUrl("~/Content/Bootstrap.min.css") %>" rel="stylesheet" />
+    <script src="<%=ResolveUrl("~/Scripts/Bootstrap.bundle.min.js") %>"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+                
+        }
+        .auto-style5 {
+            width: 100%;
+        }
+               
+        }
+        .auto-style14 {
+            text-align: center;
+        }
+        .auto-style21 {
+            text-align: center;
+            width: 523px;
+            font-size: large;
+            height: 36px;
+        }
+        .auto-style25 {
+            text-align: left;
+            width: 255px;
+        }
+        .auto-style27 {
+            height: 41px;
+            text-align: center;
+        }
+        .style1
+        {
+            width: 100%;
+            height: 100%;
+            border: 1px solid #000000;
+            font-family: Verdana;
+            font-size: medium;
+        }
+        .style2
+        {
+          
+        }
+        .auto-style29 {
+            width: 100%;
+            color: #FFFFFF;
+            background-color: #000000;
+        }
+        .auto-style30 {
+            height: 41px;
+            text-align: left;
+        }
+        .auto-style31 {
+            height: 34px;
+            text-align: left;
+        }
+        .auto-style32 {
+            font-size: xx-large;
+        }
+        .auto-style33 {
+            text-align: justify;
+        }
+        .auto-style34 {
+            text-align: justify;
+            width: 523px;
+        }
+        .auto-style35 {
+            background-color: #990000;
+        }
+        </style>
+</head>
+<body>
+    <form id="form2" runat="server">
+        <table border="0" cellpadding="0" cellspacing="0" class="style1" style="border: thin solid #800000;">
+            <tr>
+                <td bgcolor="#FFFFCC" colspan="3" style="color: #FFFFFF; background-color: #CC3300; background-image: url('');">&nbsp;&nbsp;
+                    <asp:Image ID="Image6" runat="server" Height="20px" ImageUrl="~/Images/call.png" Width="20px" />
+                    &nbsp;8446340100&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Image ID="Image7" runat="server" Height="20px" ImageUrl="~/Images/email.png" Width="25px" />
+                    &nbsp;homeservices@gmail.com </td>
+            </tr>
+            <tr>
+                <td bgcolor="#FFFFCC" class="style2" style="font-size: x-large; color: #FD3417; font-weight: 700; font-style: italic; background-color: #FFFFFF; background-image: url('');">&nbsp;&nbsp;<asp:Image ID="Image8" runat="server" Height="94px" ImageUrl="~/Image/i4.png" Width="217px" />
+                </td>
+                <td valign="middle">&nbsp;
+                                    <asp:Label ID="Label3" runat="server" Font-Bold="False" Font-Size="XX-Large" ForeColor="#CC3300" Text="HOME" CssClass="auto-style32"></asp:Label>
+
+                                    &nbsp;&nbsp;
+
+                                    <asp:Label ID="Label4" runat="server" Font-Bold="False" Font-Size="XX-Large" ForeColor="Black" Text="SERVICES" CssClass="auto-style32"></asp:Label>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br />
+                </td>
+                <td align="right" valign="top">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <asp:Menu ID="Menu2" runat="server" BackColor="Gray" ForeColor="White" Height="35px" Orientation="Horizontal" style="text-align: center; background-color: #000000;" Width="100%" RenderingMode="Table">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/User/home.aspx" Text="HOME" Value="HOME"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/User/Aboutus.aspx" Text="ABOUT US" Value="ABOUT US"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/User/Service.aspx" Text="SERVICES" Value="SERVICES"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/User/Termsandconditions.aspx" Text="TERMS &amp; CONDITIONS" Value="Terms &amp; Conditions"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/User/Member.aspx" Text="MEMBER FORM" Value="SERVICE MAN"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/User/enquiry.aspx" Text="ENQUIRY" Value="ENQUIRY"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/User/login.aspx" Text="LOGIN" Value="REGISTRATION"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                        <table align="center" class="auto-style29" cellpadding="5">
+                            <tr>
+                                <td class="auto-style25" style="vertical-align:top;" rowspan="2"><table align="center" cellspacing="1" class="auto-style5">
+                                    <tr>
+                                        <td class="auto-style31" colspan="2"><strong>Quick Link<hr />
+                                            </strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto-style30">
+                                            <asp:HyperLink ID="HyperLink10" runat="server">Home</asp:HyperLink>
+                                            <br />
+                                            <asp:HyperLink ID="HyperLink11" runat="server">About Us</asp:HyperLink>
+                                            <br />
+                                            <asp:HyperLink ID="HyperLink13" runat="server">Term &amp; Condition</asp:HyperLink>
+                                            <br />
+                                            <asp:HyperLink ID="HyperLink14" runat="server">Member</asp:HyperLink>
+                                            <br />
+                                            <br />
+                                        </td>
+                                        <td class="auto-style27">
+                                            &nbsp;</td>
+                                    </tr>
+                                    </table>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </td>
+                                <td class="auto-style21">Contact Us<hr />
+                                </td>
+                                <td class="auto-style14" rowspan="2" style="vertical-align:top;">
+                                    &nbsp;<asp:Image ID="Image1" runat="server" Height="84px" ImageUrl="~/Image/i4.png" Width="164px" />
+                &nbsp;
+                                </td>
+                                <td class="auto-style33" rowspan="2" style="vertical-align:top;">
+                                    We are One stop solution for all your Service nedds.We offer professional services such as Electrician , Plumber , Pest control , Carpenter , AC &amp; Refrigerator , Water purifier Repair , Washing Machine , Inverter Repair , Home Cleaning , Home Painting.</td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style34" style="vertical-align:top;"><span class="auto-style8">Shri Ganesh Niwas no12,<br />
+                padmavati nagari,near dutta nagar,</span><br class="auto-style8" />
+                <span class="auto-style8">Vishrambag,Sangli-416416,Maharashtra.<br />
+                                    8446340100 ,9172641285<br />
+                                    homeservice@gmail.com</span></td>
+                            </tr>
+                            </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="color: #FFFFFF; background-color: #808080">
+                    <marquee behavior="alternate" style="height: 23px; " class="auto-style35">Project by:- Pritam & Shivam.<asp:Button ID="Button1" runat="server" Text="h" AccessKey="h" BackColor="#990000" ForeColor="#990000" PostBackUrl="~/Admin/login.aspx" BorderStyle="None"></asp:Button></marquee></td>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>
